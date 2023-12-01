@@ -11,7 +11,7 @@ body, html {
 }
 
 .contenedor {
-  background-image: url("https://dulce29.herokuapp.com/static/img/fondo.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
