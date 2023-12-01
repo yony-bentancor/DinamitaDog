@@ -1,4 +1,31 @@
 
+
+/*--------------------------- Dinamita dog ------------------------------------------------*/
+/*--------------------------- index partial------------------------------------------------*/
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.contenedor {
+  background-image: url("./../img/fondo.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* 100% de la altura de la ventana visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Ajusta el color del texto según sea necesario */
+  font-size: 24px;
+}
+
+
+
+
 /*--------------------------- Master Administrador------------------------------------------------*/
 #contenedorMasterAdministrador {
   background-color: #ffffff;
