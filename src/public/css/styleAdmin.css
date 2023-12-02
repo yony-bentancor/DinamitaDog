@@ -11,7 +11,7 @@ body, html {
 }
 
 .contenedor {
-  background-image: url("/img/fondo.jpg");  background-size: cover;
+ background-color: #2d8ff2; background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh; /* 100% de la altura de la ventana visible */
