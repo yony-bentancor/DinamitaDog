@@ -34,6 +34,8 @@ body, html {
    align-items: center;
    color: #fff; /* Ajusta el color del texto según sea necesario */
    font-size: 24px;
+ 
+   transition: margin-left 0.5s ease; 
  }
 
 
