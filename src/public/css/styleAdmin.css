@@ -24,6 +24,18 @@ body, html {
   font-size: 24px;
 }
 
+.fondo1 {
+  background-color: #e2e8ed; 
+  float: right;
+   height: 400px; /* 100% de la altura de la ventana visible */
+   width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff; /* Ajusta el color del texto según sea necesario */
+   font-size: 24px;
+ }
+
 
 
 
