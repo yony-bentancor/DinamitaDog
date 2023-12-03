@@ -34,7 +34,7 @@ body, html {
   align-items: center;
   color: #fff;
   font-size: 24px;
-  margin-left: 800px;
+  margin-left: 740px;
   margin-right: 0; /* Asegúrate de que marginLeft sea 0 inicialmente para que la transición funcione */
   transition: margin-right 0.5s ease;
 }
