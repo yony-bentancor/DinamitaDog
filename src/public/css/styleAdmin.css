@@ -27,6 +27,7 @@ body, html {
 .fondo1 {
   background-color: #fff;
   float: right;
+  display: block;
   padding-top: 100px;
   height: 100vh;
   width: 780px;
@@ -42,23 +43,19 @@ body, html {
 .enter {
   color: #000;
   font-weight: bold;
-  background-color: #FFF;
+  background-color: #245a90;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 117px;
-  display: block;
-  margin-bottom: -5px; /* Ajusta el espaciado vertical entre las etiquetas */
+  font-size: 117px;/* Ajusta el espaciado vertical entre las etiquetas */
 }
 
 .enterClass {
   color: #c880b8;
-  display: block;
-  background-color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   border: none;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 5px; /* Ajusta el espaciado vertical sobre el botón */
+/* Ajusta el espaciado vertical sobre el botón */
 }
 
 
