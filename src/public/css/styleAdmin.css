@@ -43,20 +43,22 @@ body, html {
 
 .enter {
   color: #000;
-  padding-top: -5px;
+  margin-top: -15px;
   font-weight: bold;
-  background-color: #245a90;
+  background-color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;/* Ajusta el espaciado vertical entre las etiquetas */
 }
 
 .enterClass {
   color: #c880b8;
+  background-color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   border: none;
   font-weight: bold;
   text-decoration: none;
+  margin-top: -10px;
 /* Ajusta el espaciado vertical sobre el botón */
 }
 
