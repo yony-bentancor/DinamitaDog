@@ -28,27 +28,28 @@ body, html {
   background-color: #fff;
   float: right;
   padding-top: 200px;
-  height: 100vh; 
-  width: 740px;
+  height: 100vh;
+  width: 780px;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 24px;
   margin-left: 700px;
-  margin-right: 0; /* Asegúrate de que marginLeft sea 0 inicialmente para que la transición funcione */
+  margin-right: 0;
   transition: margin-right 0.5s ease;
 }
-.enter{
+
+.enter {
   color: #000;
   font-weight: bold;
   background-color: #FFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   display: block;
-
-
+  margin-bottom: 20px; /* Ajusta el espaciado vertical entre las etiquetas */
 }
-.enterClass{
+
+.enterClass {
   color: #c880b8;
   display: block;
   background-color: #fff;
@@ -57,6 +58,7 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
+  margin-top: 20px; /* Ajusta el espaciado vertical sobre el botón */
 }
 
 
