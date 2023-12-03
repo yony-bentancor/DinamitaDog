@@ -46,6 +46,14 @@ body, html {
   border: none;
   text-decoration: none;
 }
+.enterClass{
+  color: #ef6161;
+  background-color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+  border: none;
+  text-decoration: none;
+}
 
 
 
