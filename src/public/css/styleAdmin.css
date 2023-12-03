@@ -25,18 +25,18 @@ body, html {
 }
 
 .fondo1 {
-  background-color: #e2e8ed; 
+  background-color: #e2e8ed;
   float: right;
-   height: 400px; /* 100% de la altura de la ventana visible */
-   width: 400px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #fff; /* Ajusta el color del texto según sea necesario */
-   font-size: 24px;
- 
-   transition: margin-left 0.5s ease; 
- }
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  margin-left: 0; /* Asegúrate de que marginLeft sea 0 inicialmente para que la transición funcione */
+  transition: margin-left 0.5s ease;
+}
 
 
 
