@@ -27,10 +27,9 @@ body, html {
 .fondo1 {
   background-color: #fff;
   float: right;
-  padding-top: 300px;
+  padding-top: 200px;
   height: 100vh; 
   width: 740px;
-  display: block;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -45,11 +44,13 @@ body, html {
   background-color: #FFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
+  display: block;
 
 
 }
 .enterClass{
   color: #c880b8;
+  display: block;
   background-color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
