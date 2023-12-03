@@ -46,7 +46,7 @@ body, html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   display: block;
-  margin-bottom: 20px; /* Ajusta el espaciado vertical entre las etiquetas */
+  margin-bottom: -5px; /* Ajusta el espaciado vertical entre las etiquetas */
 }
 
 .enterClass {
@@ -58,7 +58,7 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 20px; /* Ajusta el espaciado vertical sobre el botón */
+  margin-top: 5px; /* Ajusta el espaciado vertical sobre el botón */
 }
 
 
