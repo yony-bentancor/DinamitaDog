@@ -1,14 +1,27 @@
-<body>
-  <div class="contenedor">
-    <!-- Contenido adicional puede ir aquí -->
-    <div class="fondo1" id="miDiv">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desplazamiento Horizontal</title>
+  </head>
+  <body>
+    <div class="contenedor">
       <!-- Contenido adicional puede ir aquí -->
-
+      <div class="fondo1" id="miDiv">
+        <!-- Contenido adicional puede ir aquí -->
+      </div>
+      <button onclick="desplazar()">Desplazar</button>
     </div>
-    <button onclick="desplazar()">Desplazar</button>
 
-    <script src="script.js"></script>
-
-  </div>
-
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function desplazar() {
+          var miDiv = document.getElementById('miDiv');
+          miDiv.style.marginLeft = '200px'; // Modifica el valor según sea necesario
+        }
+      });
+    </script>
+  </body>
+</html>
