@@ -28,14 +28,21 @@ body, html {
   background-color: #e2e8ed;
   float: right;
   height: 100vh; 
-  width: 400px;
+  width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 24px;
+  margin-left: 800px;
   margin-right: 0; /* Asegúrate de que marginLeft sea 0 inicialmente para que la transición funcione */
   transition: margin-right 0.5s ease;
+}
+.enter{
+  color: #000;
+  font-size: 40px;
+  border: none;
+  text-decoration: none;
 }
 
 
