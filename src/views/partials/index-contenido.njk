@@ -11,15 +11,16 @@
       <!-- Contenido adicional puede ir aquí -->
       <div class="fondo1" id="miDiv">
         <!-- Contenido adicional puede ir aquí -->
+        <button onclick="desplazar()">Desplazar</button>
       </div>
-      <button onclick="desplazar()">Desplazar</button>
+
     </div>
 
     <script>
       function desplazar() {
         var miDiv = document.getElementById('miDiv');
-        miDiv.style.transition = 'margin-left 0.5s ease';
-        miDiv.style.marginLeft = '200px'; // Modifica el valor según sea necesario
+        miDiv.style.transition = 'margin-right 0.5s ease';
+        miDiv.style.marginRight = '500px'; // Modifica el valor según sea necesario
       }
     </script>
   </body>
