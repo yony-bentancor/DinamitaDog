@@ -65,6 +65,7 @@ body, html {
   background-color: #fff;
   margin-top: 360px;
   margin-right: 300px;
+  float: inline-start;
 }
 
 
