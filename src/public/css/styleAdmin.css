@@ -28,8 +28,8 @@ body, html {
   background-color: #fff;
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo1.jpg");
   padding-right: 100px;
-  padding-bottom: 100px;
   background-position: left;
+  background-repeat: no-repeat;
 
   float: right;
   display: block;
@@ -63,7 +63,7 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  margin-top: -10px;
+  margin-top: 350px;
 /* Ajusta el espaciado vertical sobre el botón */
 }
 
