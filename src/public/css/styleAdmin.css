@@ -63,7 +63,8 @@ body, html {
   text-decoration: none;
   position: absolute;
   background-color: #fff;
-  margin-top: 0px;
+  margin-top: 400px;
+  float: left;
 }
 
 
