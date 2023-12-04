@@ -26,10 +26,7 @@ body, html {
 
 .fondo1 {
   background-color: #fff;
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo1.jpg");
-  padding-right: 100px;
-  background-position: left;
-  background-repeat: no-repeat;
+
 
   float: right;
   display: block;
@@ -46,18 +43,19 @@ body, html {
   transition: margin-right 0.5s ease;
 }
 
-.enter {
-  color: #000;
-  margin-right: 100px;
-  font-weight: bold;
-  background-color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 117px;/* Ajusta el espaciado vertical entre las etiquetas */
+.dinamitaDogImg {
+  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo1.jpg");
+  padding-right: 80px;
+  width: 400px;
+  height: 300px;
+  background-position: left;
+  background-repeat: no-repeat;
+ 
 }
 
 .enterClass {
   color: #c880b8;
-  background-color: #fff;
+  background-color: #d7b1b1;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   border: none;
