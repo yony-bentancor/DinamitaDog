@@ -63,9 +63,9 @@ body, html {
   text-decoration: none;
   position: relative;
   background-color: #fff;
-  padding: 0px; 
+  padding-top: -20px; 
   margin-right: 10px;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 
 
