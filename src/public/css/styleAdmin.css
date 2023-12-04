@@ -61,10 +61,11 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  position: absolute;
+  position: relative;
   background-color: #fff;
-  padding: 0; 
-  margin-top: -16px;
+  padding: 0px; 
+  margin-right: 10px;
+  margin-top: -20px;
 }
 
 
