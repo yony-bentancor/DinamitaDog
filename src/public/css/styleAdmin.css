@@ -27,9 +27,10 @@ body, html {
 .fondo1 {
   background-color: #fff;
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo1.jpg");
+  padding-right: 100px;
+  padding-bottom: 100px;
+  background-position: left;
 
-  background-position: center;
-  background-repeat: no-repeat;
   float: right;
   display: block;
   padding-left: 20px;
