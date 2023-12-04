@@ -61,7 +61,7 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  position: relative;
+  position: absolute;
   background-color: #fff;
   padding-top: -20px; 
   margin-right: 10px;
