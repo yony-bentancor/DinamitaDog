@@ -61,11 +61,12 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  position: absolute;
+  position: relative;
   background-color: #fff;
   margin-top: 360px;
   margin-right: 300px;
-  float: inline-start;
+  float: left;
+
 }
 
 
