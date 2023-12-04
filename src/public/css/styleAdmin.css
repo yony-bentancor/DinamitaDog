@@ -65,8 +65,10 @@ body, html {
   position: relative;
   background-color: #fff;
   margin-top: 360px;
-  margin-right: 300px;
+  margin-right: 400px;
   float: left;
+  z-index: 0;
+  
 
 }
 
