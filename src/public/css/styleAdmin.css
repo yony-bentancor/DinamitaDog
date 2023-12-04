@@ -54,7 +54,6 @@ body, html {
 
 .enterClass {
   color: #c880b8;
-  background-color: #c09696;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   height: auto;
@@ -63,11 +62,7 @@ body, html {
   font-weight: bold;
   text-decoration: none;
   position: absolute;
-
-margin-top: -10px;
-  margin-left: -5px;
-  float: left;
-/* Ajusta el espaciado vertical sobre el botón */
+  padding: 0; /
 }
 
 
