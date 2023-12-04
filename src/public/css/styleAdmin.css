@@ -49,6 +49,7 @@ body, html {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
+  z-index: 1;
  
 }
 
