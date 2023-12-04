@@ -61,9 +61,10 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
+  position: absolute;
   padding-bottom: 20px;
   margin-top: -10px;
-  margin-right: 214px;
+  padding-left: 10px;
   float: left;
 /* Ajusta el espaciado vertical sobre el botón */
 }
