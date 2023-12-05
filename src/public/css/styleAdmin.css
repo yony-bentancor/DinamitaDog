@@ -11,11 +11,9 @@ body, html {
 }
 
 .contenedor {
- background-color: #44505b; 
- background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/dog.gif");
- background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ background-color: #fff; 
+
+
   height: 100vh; /* 100% de la altura de la ventana visible */
   display: flex;
   justify-content: center;
@@ -25,7 +23,7 @@ body, html {
 }
 
 .fondo1 {
-  background-color: #fff;
+  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/dog.gif");
   float: right;
   display: block;
   padding-left: 20px;
