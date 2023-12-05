@@ -16,8 +16,6 @@ nunjucks.configure("./src/views", {
 db();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// Importa la tarea programada
-const schedule = require("./tareaProgramada");
 
 app.use("/", pageRoutes);
 app.use(express.static("/"));
