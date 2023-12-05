@@ -42,7 +42,7 @@ body, html {
 }
 
 .dinamitaDogImg {
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo1.jpg");
+  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/dog.gif");
   padding-right: 80px;
   width: 700px;
   height: 400px;
