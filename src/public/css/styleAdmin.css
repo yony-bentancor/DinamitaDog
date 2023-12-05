@@ -12,7 +12,7 @@ body, html {
 
 .contenedor {
  background-color: #44505b; 
- background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondodog.gif");
+ background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/dog.gif");
  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
