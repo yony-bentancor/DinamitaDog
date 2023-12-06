@@ -22,14 +22,14 @@ body, html {
 
 #DivLEFT{
   height: 100vh;
-  width: 780px;
+  width: 50%;
   position: absolute;
 
   
 }
 #DivRIGHT{
   height: 100vh;
-  width: 780px;
+  width: 50%;
   float: right;
   background-color: #FEC426;
 }
