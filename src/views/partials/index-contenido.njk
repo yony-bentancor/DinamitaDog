@@ -45,27 +45,35 @@
         miDiv.style.marginLeft = "-10px";
       }
     </script>
+    <style>
+
+      .fondoRIGHT {
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+    </style>
+
     <script>
       document.addEventListener('keydown', function (event) {
         if (event.code === 'Space') {
-          // Si se presiona la barra espaciadora, realiza el salto
           jump();
         }
       });
 
       function jump() {
-        // Obtén el elemento .fondoRIGHT
         var fondoRight = document.querySelector('.fondoRIGHT');
-
-        // Obtén la mitad de la altura del elemento
         var halfHeight = fondoRight.offsetHeight / 2;
 
-        // Aplica el salto usando transform para cambiar la posición vertical
+        // Añade una clase para aplicar la transformación y luego retírala para volver al estado original
+        fondoRight
+          .classList
+          .add('jumping');
         fondoRight.style.transform = 'translateY(-' + halfHeight + 'px)';
 
-        // Después de un breve período, restablece la posición
         setTimeout(function () {
           fondoRight.style.transform = 'translateY(0)';
+          fondoRight
+            .classList
+            .remove('jumping');
         }, 500); // Ajusta la duración del salto según sea necesario
       }
     </script>

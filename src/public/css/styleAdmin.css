@@ -51,6 +51,7 @@ body, html {
 }
 .fondoRIGHT {
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT - copia.gif");
+  background-color: #FEC426;;
   float: right;
   height: 300px;
   width: 260px;
@@ -75,7 +76,7 @@ body, html {
 .dinamitaDogTXT {
   color: #000;
   background-color: #fff;
-  text-align: right;
+  text-align: left;
   margin-right: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 90px;
