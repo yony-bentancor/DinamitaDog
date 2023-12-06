@@ -10,7 +10,7 @@ const DB_CONNECTION_STRING =
 const uri =
   "mongodb+srv://proyectodulce:dulce29@cluster0.bi9aze0.mongodb.net/?retryWrites=true&w=majority";
 
-const HOST = "https://dulce29.herokuapp.com/";
+const HOST = "https://dinamitadog-01a0d2a58fb2.herokuapp.com/";
 
 /* "http://localhost";
  */

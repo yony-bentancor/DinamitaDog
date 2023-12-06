@@ -1,2 +1,1 @@
-﻿#Proyecto Gestion Usuario/Productos
- Ver archivos jpg dulce29 imagen diseño
+﻿#Proyecto DinamitaDog-2023
