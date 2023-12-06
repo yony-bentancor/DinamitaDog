@@ -35,8 +35,7 @@ body, html {
 }
 
 .fondoLEFT {
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoRIGHT.gif");
-  background-repeat: no-repeat;
+
   float: left;
   display: block;
   padding-left: 40px;
@@ -51,8 +50,10 @@ body, html {
   z-index: 1;
 }
 .fondoRIGHT {
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT.gif");
+  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT - copia.gif");
   float: right;
+  height: 300px;
+  width: 260px;
   background-repeat: no-repeat;
   display: block;
   padding-left: 20px;
@@ -62,6 +63,7 @@ body, html {
   color: #fff;
   font-size: 24px;
   margin-left: 700px;
+  margin-top: 400px;
   margin-right: 0;
   transition: margin-right 0.5s ease;
 }
