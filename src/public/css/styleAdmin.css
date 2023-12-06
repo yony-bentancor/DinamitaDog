@@ -50,11 +50,11 @@ body, html {
   z-index: 1;
 }
 .fondoRIGHT {
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT - copia.gif");
+  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT1.gif");
   background-color: #FEC426;;
   float: right;
   height: 300px;
-  width: 260px;
+  width: 40px;
   background-repeat: no-repeat;
   display: block;
   padding-left: 20px;
@@ -93,12 +93,12 @@ body, html {
   background-color: #FEC426;
   margin-left: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 80px;
+  font-size: 130px;
   border: none;
   font-weight: bold;
   text-decoration: none;
   z-index: 2;
-  margin-top: 410px;
+  margin-top: 50px;
 
 }
 
