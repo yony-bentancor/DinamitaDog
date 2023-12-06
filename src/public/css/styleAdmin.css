@@ -47,6 +47,7 @@ body, html {
   margin-right: 700px;
   margin-left: 0;
   transition: margin-left 0.5s ease;
+  z-index: 1;
 }
 .fondoRIGHT {
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoRIGHT.gif");
@@ -87,7 +88,7 @@ body, html {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  z-index: 1;
+  z-index: 2;
   margin-top: 400PX;
 
 }
