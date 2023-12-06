@@ -24,13 +24,14 @@ body, html {
   height: 100vh;
   width: 780px;
   position: absolute;
-  background-color: #FEC426;
+
   
 }
 #DivRIGHT{
   height: 100vh;
   width: 780px;
   float: right;
+  background-color: #FEC426;
 }
 
 .fondoLEFT {
@@ -69,15 +70,17 @@ body, html {
 
 
 
-.dinamitaDogImg {
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondo1.jpg");
-  padding-right: 80px;
-  width: 400px;
-  height: 400px;
-  background-position: left;
-  background-repeat: no-repeat;
+.dinamitaDogTXT {
+  color: #000;
   background-color: #fff;
-  z-index: 1;
+  margin-left: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 117px;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2;
+  margin-top: 430px;
  
 }
 
