@@ -73,7 +73,8 @@ body, html {
 .dinamitaDogTXT {
   color: #000;
   background-color: #fff;
-  margin-left: 80px;
+  text-align: right;
+  margin-left: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 80px;
   border: none;
