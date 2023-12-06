@@ -2,8 +2,6 @@
 
 /*--------------------------- Dinamita dog ------------------------------------------------*/
 /*--------------------------- index partial------------------------------------------------*/
-
-
 body, html {
   margin: 0;
   padding: 0;
@@ -11,81 +9,57 @@ body, html {
 }
 
 .contenedor {
-  background-color: #FEC426;;
-  height: 100vh; /* 100% de la altura de la ventana visible */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff; /* Ajusta el color del texto según sea necesario */
-  font-size: 24px;
-}
-
-#DivLEFT{
-  height: 100vh;
-  width: 50%;
-  position: absolute;
-
-  
-}
-#DivRIGHT{
-  height: 100vh;
-  width: 50%;
-  float: right;
   background-color: #FEC426;
-}
-
-.fondoLEFT {
-
-  float: left;
-  display: block;
-  padding-left: 40px;
-  padding-top: 170px;
+  height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 24px;
+}
+
+#DivLEFT, #DivRIGHT {
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+}
+
+#DivRIGHT {
+  float: right;
+  background-color: #FEC426;
+}
+
+.fondoLEFT, .fondoRIGHT {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.fondoLEFT {
+  float: left;
+  padding-left: 40px;
+  padding-top: 170px;
   margin-right: 800px;
   margin-left: 0;
   transition: margin-left 0.5s ease;
   z-index: 1;
 }
+
 .fondoRIGHT {
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT1.gif");
-  background-color: #FEC426;;
+  background-color: #FEC426;
   float: right;
-  height: 300px;
-  width: 40px;
+  height: 200px;
+  width: 400px;
   background-repeat: no-repeat;
-  display: block;
   padding-left: 20px;
   padding-top: 80px;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 24px;
   margin-left: 700px;
   margin-top: 450px;
   margin-right: 0;
   transition: margin-right 0.5s ease;
-}
-
-
-
-
-
-.dinamitaDogTXT {
-  color: #000;
-  background-color: #FEC426;
-  text-align: left;
-  margin-right: 60px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 90px;
-  border: none;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 2;
-  margin-top: 230px;
- 
 }
 
 .enterClass {
@@ -99,19 +73,4 @@ body, html {
   text-decoration: none;
   z-index: 2;
   margin-top: 50px;
-
 }
-
-
-
-
-/*--------------------------- Master Administrador------------------------------------------------*/
-#contenedorMasterAdministrador {
-  background-color: #FEC426;
-  height: 420px;
-  margin-left: 50px;
-  margin-top: 10px;
-  position: absolute;
-  width: auto;
-}
-

@@ -8,36 +8,24 @@
   </head>
   <body>
     <div class="contenedor">
-      <!-- Contenido adicional puede ir aquí -->
-      <div id="DivLEFT"  class="fondoLEFT" >
-        <!-- Contenido adicional puede ir aquí -->
+      <div id="DivLEFT" class="fondoLEFT">
         <div class="row">
-
           <div class="col-12">
             <button onclick="desplazar()" class="enterClass">DINAMITA</button>
           </div>
           <div class="col-12">
-            <button onclick="desplazar()" class="enterClass"> DOG</button>
+            <button onclick="desplazar()" class="enterClass">DOG</button>
           </div>
-          {# 
-
-          <div class="col">
-            <button onclick="desplazar()" class="enterClass">ENTER</button>
-          </div> #}
         </div>
       </div>
 
-      <div id="DivRIGHT"  class="fondoRIGHT" >
-        <!-- Contenido adicional puede ir aquí -->
+      <div id="DivRIGHT" class="fondoRIGHT">
         <div class="row">
-          {# <div class="col dinamitaDogImg"></div>#}
-
           <div class="col">
-            <button id="jumpButton" onclick="desplazar()" class="enterClass"></button>
+            <button id="jumpButton" onclick="jump()" class="enterClass"></button>
           </div>
         </div>
       </div>
-
     </div>
 
     <script>
@@ -47,38 +35,19 @@
         miDiv.style.marginRight = '760px'; // Modifica el valor según sea necesario
         miDiv.style.marginLeft = "-10px";
       }
-    </script>
-    <style>
-
-      .fondoRIGHT {
-        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-      }
-    </style>
-
-    <script>
-      document.addEventListener('keydown', function (event) {
-        if (event.code === 'Space') {
-          jump();
-        }
-      });
 
       function jump() {
         var fondoRight = document.querySelector('.fondoRIGHT');
-        var halfHeight = fondoRight.offsetHeight / 4;
+        var halfHeight = fondoRight.offsetHeight / 2;
 
-        // Añade una clase para aplicar la transformación y luego retírala para volver al estado original
-        fondoRight
-          .classList
-          .add('jumping');
+        fondoRight.style.transition = 'transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)';
         fondoRight.style.transform = 'translateY(-' + halfHeight + 'px)';
 
         setTimeout(function () {
           fondoRight.style.transform = 'translateY(0)';
-          fondoRight
-            .classList
-            .remove('jumping');
-        }, 500); // Ajusta la duración del salto según sea necesario
+        }, 500);
       }
     </script>
+
   </body>
 </html>
