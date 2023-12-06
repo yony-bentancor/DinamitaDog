@@ -20,14 +20,23 @@ body, html {
   font-size: 24px;
 }
 
+#DivLEFT{
+  height: 100vh;
+  width: 780px;
+  position: absolute;
+}
+#DivRIGHT{
+  height: 100vh;
+  width: 780px;
+  float: right;
+}
+
 .fondoLEFT {
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT.gif");
   float: left;
   display: block;
   padding-left: 20px;
   padding-top: 80px;
-  height: 100vh;
-  width: 780px;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -42,8 +51,6 @@ body, html {
   display: block;
   padding-left: 20px;
   padding-top: 80px;
-  height: 100vh;
-  width: 780px;
   justify-content: center;
   align-items: center;
   color: #fff;
