@@ -13,6 +13,9 @@
         <!-- Contenido adicional puede ir aquí -->
         <div class="row">
           <div class="col dinamitaDogTXT">DINAMITA DOG</div>
+          <div class="col">
+            <button onclick="desplazar()" class="enterClass">ENTER</button>
+          </div>
           {# 
 
           <div class="col">
@@ -27,7 +30,7 @@
           {# <div class="col dinamitaDogImg"></div>#}
 
           <div class="col">
-            <button onclick="desplazar()" class="enterClass">ENTER</button>
+            <button id="jumpButton" onclick="desplazar()" class="enterClass">ENTER</button>
           </div>
         </div>
       </div>
@@ -40,6 +43,30 @@
         miDiv.style.transition = 'margin-right 0.5s ease';
         miDiv.style.marginRight = '760px'; // Modifica el valor según sea necesario
         miDiv.style.marginLeft = "-10px";
+      }
+    </script>
+    <script>
+      document.addEventListener('keydown', function (event) {
+        if (event.code === 'Space') {
+          // Si se presiona la barra espaciadora, realiza el salto
+          jump();
+        }
+      });
+
+      function jump() {
+        // Obtén el elemento .fondoRIGHT
+        var fondoRight = document.querySelector('.fondoRIGHT');
+
+        // Obtén la mitad de la altura del elemento
+        var halfHeight = fondoRight.offsetHeight / 2;
+
+        // Aplica el salto usando transform para cambiar la posición vertical
+        fondoRight.style.transform = 'translateY(-' + halfHeight + 'px)';
+
+        // Después de un breve período, restablece la posición
+        setTimeout(function () {
+          fondoRight.style.transform = 'translateY(0)';
+        }, 500); // Ajusta la duración del salto según sea necesario
       }
     </script>
   </body>
