@@ -75,7 +75,7 @@ body, html {
   background-color: #fff;
   margin-left: 80px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 117px;
+  font-size: 80px;
   border: none;
   font-weight: bold;
   text-decoration: none;
@@ -86,10 +86,10 @@ body, html {
 
 .enterClass {
   color: #000;
-  background-color: #fff;
+  background-color: #FEC426;
   margin-left: 80px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 117px;
+  font-size: 80px;
   border: none;
   font-weight: bold;
   text-decoration: none;
