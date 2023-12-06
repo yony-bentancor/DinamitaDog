@@ -83,13 +83,15 @@ body, html {
 
 .enterClass {
   color: #000;
+  background-color: #fff;
+  margin-left: 80px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 117px;
   border: none;
   font-weight: bold;
   text-decoration: none;
   z-index: 2;
-  margin-top: 400PX;
+  margin-top: 430px;
 
 }
 
