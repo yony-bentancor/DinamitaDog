@@ -24,6 +24,7 @@ body, html {
   height: 100vh;
   width: 780px;
   position: absolute;
+  
 }
 #DivRIGHT{
   height: 100vh;
@@ -33,7 +34,7 @@ body, html {
 
 .fondoLEFT {
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT.gif");
-  background: no-repeat;
+  background-repeat: no-repeat;
   float: left;
   display: block;
   padding-left: 20px;
@@ -49,7 +50,7 @@ body, html {
 .fondoRIGHT {
   background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoRIGHT.gif");
   float: right;
-  background: no-repeat;
+  background-repeat: no-repeat;
   display: block;
   padding-left: 20px;
   padding-top: 80px;
