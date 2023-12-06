@@ -11,7 +11,7 @@ body, html {
 }
 
 .contenedor {
- background-color: #fff; 
+  background-color: #FEC426;;
   height: 100vh; /* 100% de la altura de la ventana visible */
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ body, html {
 
 .dinamitaDogTXT {
   color: #000;
-  background-color: #fff;
+  background-color: #FEC426;
   text-align: left;
   margin-right: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
