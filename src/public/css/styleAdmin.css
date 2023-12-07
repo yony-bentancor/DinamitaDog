@@ -10,7 +10,7 @@ body {
   overflow: hidden;
 }
 
-#gallina {
+.gallina {
   width: 200px;
   height: 150px;
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallina.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
@@ -21,13 +21,3 @@ body {
   transform: translateX(-50%);
 }
 
-
-.contenedor {
-  background-color: #FEC426;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 24px;
-}

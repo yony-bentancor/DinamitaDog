@@ -1,6 +1,7 @@
-import { Gallina } from "./objetos";
+import { Gallina } from "./objetos.js";
 
-const gallina = new Gallina(document.getElementById("gallina"));
+const gallinaContainer = document.getElementById("gallina-container");
+const gallina = new Gallina(gallinaContainer);
 
 document.addEventListener("keydown", (event) => {
   switch (event.code) {

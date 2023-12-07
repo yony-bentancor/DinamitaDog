@@ -1,6 +1,6 @@
 class Gallina {
-  constructor(element) {
-    this.element = element;
+  constructor(container) {
+    this.container = container;
     this.jumpHeight = 100;
     this.jumpSpeed = 5;
     this.isJumping = false;
@@ -8,7 +8,9 @@ class Gallina {
   }
 
   setupElement() {
+    this.element = document.createElement("div");
     this.element.classList.add("gallina");
+    this.container.appendChild(this.element);
   }
 
   moveRight() {
