@@ -4,50 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Desplazamiento Horizontal</title>
+    <title>Gallina Simulator</title>
   </head>
   <body>
-    <div class="contenedor">
-      <div id="DivLEFT" class="fondoLEFT">
-        <div class="row">
-          <div class="col-12">
-            <button onclick="desplazar()" class="enterClass">DINAMITA</button>
-          </div>
-          <div class="col-12">
-            <button onclick="desplazar()" class="enterClass">DOG</button>
-          </div>
-        </div>
-      </div>
+    <div id="gallina"></div>
 
-      <div id="DivRIGHT" class="fondoRIGHT">
-        <div class="row">
-          <div class="col">
-            <button id="jumpButton" onclick="jump()" class="enterClass"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function desplazar() {
-        var miDiv = document.getElementById('DivRIGHT');
-        miDiv.style.transition = 'margin-right 0.5s ease';
-        miDiv.style.marginRight = '760px'; // Modifica el valor según sea necesario
-        miDiv.style.marginLeft = "-10px";
-      }
-
-      function jump() {
-        var fondoRight = document.querySelector('.fondoRIGHT');
-        var halfHeight = fondoRight.offsetHeight / 2;
-
-        fondoRight.style.transition = 'transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)';
-        fondoRight.style.transform = 'translateY(-' + halfHeight + 'px)';
-
-        setTimeout(function () {
-          fondoRight.style.transform = 'translateY(0)';
-        }, 500);
-      }
-    </script>
-
+    <script type="module" src="main.js"></script>
   </body>
 </html>

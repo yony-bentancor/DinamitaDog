@@ -2,11 +2,23 @@
 
 /*--------------------------- Dinamita dog ------------------------------------------------*/
 /*--------------------------- index partial------------------------------------------------*/
-body, html {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  overflow: hidden;
 }
+
+.gallina {
+  width: 200px;
+  height: 150px;
+  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallina.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .contenedor {
   background-color: #FEC426;
@@ -16,61 +28,4 @@ body, html {
   align-items: center;
   color: #fff;
   font-size: 24px;
-}
-
-#DivLEFT, #DivRIGHT {
-  height: 100vh;
-  width: 50%;
-  position: absolute;
-}
-
-#DivRIGHT {
-  float: right;
-  background-color: #FEC426;
-}
-
-.fondoLEFT, .fondoRIGHT {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 24px;
-}
-
-.fondoLEFT {
-  float: left;
-  padding-left: 40px;
-  padding-top: 170px;
-  margin-right: 800px;
-  margin-left: 0;
-  transition: margin-left 0.5s ease;
-  z-index: 1;
-}
-
-.fondoRIGHT {
-  background-image: url("https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgfondoLEFT1.gif");
-  background-color: #FEC426;
-  float: right;
-  height: 200px;
-  width: 400px;
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  padding-top: 80px;
-  margin-left: 700px;
-  margin-top: 450px;
-  margin-right: 0;
-  transition: margin-right 0.5s ease;
-}
-
-.enterClass {
-  color: #000;
-  background-color: #FEC426;
-  margin-left: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 130px;
-  border: none;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 2;
-  margin-top: 50px;
 }
