@@ -37,17 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let gravity = 1.5;
     let initialY = playerY;
     let jumpDistance = 50; // Distancia horizontal del salto
-    let jumpArc = 2 * Math.PI; // Un círculo completo para un salto redondo
 
     function jumpStep() {
       if (jumpHeight > 0) {
-        const jumpProgress = (initialY - playerY) / jumpHeight;
-        const angle = jumpProgress * jumpArc;
-        const xOffset = jumpDistance * Math.cos(angle) * jumpDirection;
-        const yOffset = jumpHeight * Math.sin(angle);
-
-        playerX += xOffset;
         playerY -= jumpSpeed;
+        playerX += jumpSpeed * jumpDirection; // Mover en la dirección actual
+        jumpHeight -= jumpSpeed;
         updatePlayerPosition();
         requestAnimationFrame(jumpStep);
       } else {
