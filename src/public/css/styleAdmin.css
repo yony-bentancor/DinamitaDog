@@ -17,8 +17,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+#game-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FEC426; 
+  background-size: cover;
+  display: flex;
+}
 
-.gallina {
+#player {
   width: 200px;
   height: 150px;
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallina.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
