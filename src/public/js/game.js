@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     isJumping = true;
     let jumpHeight = 60;
     let jumpSpeed = 3;
-    let gravity = 0.9;
+    let gravity = 3;
     let initialY = playerY;
-    let jumpDistance = 80; // Distancia horizontal del salto
+    let jumpDistance = 60; // Distancia horizontal del salto
 
     function jumpStep() {
       if (jumpHeight > 0) {
