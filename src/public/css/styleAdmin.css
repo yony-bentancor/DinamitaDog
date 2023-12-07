@@ -12,7 +12,7 @@ body {
 #container {
   width: 100vw; /* 100% del ancho de la ventana */
   height: 100vh; /* 100% de la altura de la ventana */
-  background-color: #f0f0f0; /* Color de fondo (ajusta según tus necesidades) */
+  background-color: #e0b5b5; /* Color de fondo (ajusta según tus necesidades) */
   display: flex;
   justify-content: center;
   align-items: center;
