@@ -1,4 +1,4 @@
-import { Gallina } from "./objetos.js";
+import { Gallina } from "./objetos";
 
 const gallina = new Gallina(document.getElementById("gallina"));
 

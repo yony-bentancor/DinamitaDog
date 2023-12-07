@@ -5,10 +5,12 @@
 body {
   margin: 0;
   padding: 0;
+  
+  background-color: #FEC426;
   overflow: hidden;
 }
 
-.gallina {
+#gallina {
   width: 200px;
   height: 150px;
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallina.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
