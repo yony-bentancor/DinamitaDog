@@ -1,4 +1,3 @@
-// En tu archivo game.js
 document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById("player");
   let playerX = 0;
@@ -33,11 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function jump() {
     isJumping = true;
-    let jumpHeight = 60;
-    let jumpSpeed = 3;
-    let gravity = 3;
+    let jumpHeight = 100;
+    let jumpSpeed = 5;
+    let gravity = 1.5;
     let initialY = playerY;
-    let jumpDistance = 60; // Distancia horizontal del salto
+    let jumpDistance = 80; // Distancia horizontal del salto
 
     function jumpStep() {
       if (jumpHeight > 0) {
@@ -59,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(fall);
       } else {
         playerY = initialY;
-        playerX += jumpDistance * jumpDirection; // Mover después de caer
         isJumping = false;
         updatePlayerPosition();
       }
