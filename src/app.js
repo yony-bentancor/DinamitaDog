@@ -1,4 +1,4 @@
-import { Gallina } from "./objetos.js";
+import { Gallina } from "./keyboardEvents.js";
 
 const gallinaContainer = document.getElementById("gallina-container");
 
