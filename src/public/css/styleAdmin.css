@@ -43,4 +43,18 @@ margin-top: 280px;
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaLeft.gif');
 }
 
+#fondoPasto {
+  width: 1800px;
+  height: 800px;
+  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondoPasto.jpg'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
+  background-size: cover;
+  background-color: #000;
+  position: absolute;
+margin-left: 0px;
+margin-top: 0px;
+  bottom: 0;
+
+  transform: translateX(-50%);
+}
+
 
