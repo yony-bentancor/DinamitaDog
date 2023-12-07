@@ -29,6 +29,13 @@ app.ws("/", (ws, req) => {
   // Aquí deberías enviar información sobre el estado del juego al cliente
   // (posición del jugador, etc.) y manejar los eventos del teclado para actualizar ese estado.
 });
+
+app.ws("/keyboard", (ws, req) => {
+  ws.on("message", (msg) => {
+    console.log("Mensaje de teclado recibido en el servidor:", msg);
+    onKeyPress(msg); // Implementa esta función para manejar eventos de teclado
+  });
+});
 app.use(express.static("/"));
 app.set("view engine", "njk");
 app.use("/static", express.static(__dirname + "/public"));
