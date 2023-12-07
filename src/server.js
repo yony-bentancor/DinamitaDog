@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const { PORT } = require("./config");
 const nunjucks = require("nunjucks");
-const expressWs = require("express-ws");
+const expressWs = require("express-ws")(app, server);
 const db = require("./db");
 var fs = require("fs");
 require("dotenv").config();
+
 const pageRoutes = require("./routes/page.routes");
 
 const nodemailer = require("nodemailer");
