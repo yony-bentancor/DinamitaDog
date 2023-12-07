@@ -31,7 +31,8 @@ body {
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallina.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   position: absolute;
-  background-color: aliceblue;
+margin-left: 80px;
+margin-top: 80px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);

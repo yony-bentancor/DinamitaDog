@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function jump() {
     isJumping = true;
     let jumpHeight = 40;
-    let jumpSpeed = 0.3;
-    let gravity = 0.1;
+    let jumpSpeed = 1;
+    let gravity = 0.8;
     let initialY = playerY;
 
     function jumpStep() {
