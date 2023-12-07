@@ -20,4 +20,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+#contenedorMasterAdministrador {
+  background-color: #ffffff;
+  height: 420px;
+  margin-left: 50px;
+  margin-top: 10px;
+  position: absolute;
+  width: auto;
+}
 
