@@ -7,6 +7,7 @@ var fs = require("fs");
 require("dotenv").config();
 const pageRoutes = require("./routes/page.routes");
 const expressWs = require("express-ws");
+const { onKeyPress } = require("./keyboardEvents");
 
 const nodemailer = require("nodemailer");
 
