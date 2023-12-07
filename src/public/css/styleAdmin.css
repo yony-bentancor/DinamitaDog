@@ -21,11 +21,5 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#player {
-  position: absolute;
-  top: 0; /* Ajusta según tus necesidades */
-  left: 0; /* Ajusta según tus necesidades */
-  width: 200px; /* Ajusta según el tamaño de tu jugador */
-  height: 150px; /* Ajusta según el tamaño de tu jugador */
-}
+
 

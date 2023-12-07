@@ -1,28 +1,13 @@
 {% extends "master.njk" %}
 {% block main %}
   <body>
-    {# <div id="gallina-container" class="gallina">
-      <!-- Contenedor de la gallina -->hh
+    <div class="gallina">
+      <!-- Contenedor de la gallina -->DINAMITA
     </div>
-jbjbj
-    <script type="module" src="../app.js"></script>
-  </body>
+DOG
+
 </html>
-</div> #}
-    <img id="player" src="https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallina.gif" alt="Player">
+</div>
 
-    <script>
-      // Conecta al servidor WebSocket
-      const socket = new WebSocket('wss://dinamitadog-01a0d2a58fb2.herokuapp.com/');
-
-      // Maneja eventos del teclado y envía mensajes al servidor WebSocket
-      document.addEventListener('keydown', (event) => {
-        const message = {
-          key: event.key
-        };
-        socket.send(JSON.stringify(message));
-      });
-    </script>
-
-  </body>
+</body>
 {% endblock %}
