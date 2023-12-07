@@ -21,12 +21,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#contenedorMasterAdministrador {
-  background-color: #FEC426;
-  height: 820px;
-  margin-left: 50px;
-  margin-top: 10px;
+#player {
   position: absolute;
-  width: 1080px;
+  top: 0; /* Ajusta según tus necesidades */
+  left: 0; /* Ajusta según tus necesidades */
+  width: 50px; /* Ajusta según el tamaño de tu jugador */
+  height: 50px; /* Ajusta según el tamaño de tu jugador */
 }
 
