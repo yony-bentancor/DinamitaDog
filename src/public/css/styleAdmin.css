@@ -5,7 +5,6 @@
 body {
   margin: 0;
   padding: 0;
-  
   background-color: #FEC426;
   overflow: hidden;
 }
@@ -13,19 +12,17 @@ body {
 #game-container {
   width: 100vw;
   height: 100vh;
-  background-color: #FEC426; 
-  background-size: cover;
   display: flex;
 }
 
 #player {
   width: 200px;
   height: 150px;
-  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaRight.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
+  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaRight.gif');
   background-size: cover;
-  position: absolute;
-margin-left: 80px;
-margin-top: 380px;
+  position: relative; /* Cambiado a 'relative' */
+  margin-left: 80px;
+  margin-top: 380px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
