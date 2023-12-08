@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
-  const screenWidth = 600;
+  const screenWidth = 6600;
   const screenHeight = 900;
   let cameraX = 0;
   let cameraY = 0;
