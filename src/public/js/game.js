@@ -6,19 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
-  const screenWidth = 6600;
+  const screenWidth = 600;
   const screenHeight = 900;
   let cameraX = 0;
   let cameraY = 0;
 
   function updatePlayerPosition() {
-    // Ajustar la posición del jugador en relación con la posición de la cámara
-    player.style.left = playerX - cameraX + "px";
-    player.style.top = playerY - cameraY + "px";
-
     // Calcular la posición de la cámara para seguir al jugador
     cameraX = Math.max(0, playerX - screenWidth / 2);
     cameraY = Math.max(0, playerY - screenHeight / 2);
+
+    // Ajustar la posición del jugador en relación con la posición de la cámara
+    player.style.left = playerX - cameraX + "px";
+    player.style.top = playerY - cameraY + "px";
 
     // Ajustar la posición de la cámara (o del contenedor principal)
     document.body.style.backgroundPosition = `-${cameraX}px -${cameraY}px`;
