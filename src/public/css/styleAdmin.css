@@ -14,8 +14,7 @@ body {
   height: 100vh; /* 100% de la altura de la ventana */
   background-color: #e0b5b5; /* Color de fondo (ajusta según tus necesidades) */
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 #game-container {
   width: 100vw;
@@ -45,13 +44,13 @@ margin-top: 280px;
 
 #fondoPasto {
   width: 1800px;
-  height: 30px;
+  height: 230px;
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondoPasto.jpg'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   background-color: #000;
   position: absolute;
 margin-left: 0px;
-margin-top: 500px;
+margin-top: 300px;
   bottom: 0;
 
   transform: translateX(-50%);
