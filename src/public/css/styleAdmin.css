@@ -5,17 +5,15 @@
 body {
   margin: 0;
   padding: 0;
-  
-  background-color: #FEC426;
   overflow: hidden;
 }
 
 #game-container {
-  width: 3000px;
+  width: 100vw;
   height: 100vh;
+  position: relative;
   background-color: #FEC426; 
-  background-size: cover;
-  display: flex;
+
 }
 
 #player {
@@ -24,10 +22,9 @@ body {
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaRight.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   position: absolute;
-margin-left: 80px;
-margin-top: 380px;
   bottom: 0;
-  left: 50%;
+  left: 50px; /* Posición inicial del personaje */
+
   transform: translateX(-50%);
 }
 
