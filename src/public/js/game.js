@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
-  const screenWidth = 1200;
-  const screenHeight = 800;
+  const screenWidth = 600;
+  const screenHeight = 900;
 
   function updatePlayerPosition() {
     // Ajustar la posición del jugador
