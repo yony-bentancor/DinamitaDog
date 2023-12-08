@@ -31,7 +31,7 @@ body {
   background-size: cover;
   position: absolute;
 margin-left: 80px;
-margin-top: 280px;
+margin-top: 380px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -48,12 +48,12 @@ margin-top: 280px;
 
 #fondoPasto {
   width: 1800px;
-  height: 316px;
+  height: 216px;
  /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   background-color: #000;
   position: absolute;
-margin-left: 1000px;
+margin-left: 940px;
 margin-top: 0px;
   bottom: 0;
 
