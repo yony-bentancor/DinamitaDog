@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
-  const screenWidth = 600;
+  const screenWidth = 1600;
   const screenHeight = 900;
+  const levelWidth = 4000; // Ancho total del nivel del juego
   let cameraX = 0;
 
   function updatePlayerPosition() {
@@ -15,13 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     player.style.left = playerX + "px";
     player.style.top = playerY + "px";
 
+    // Limitar la posición del jugador para que no se vaya más allá del nivel
+    playerX = Math.max(0, Math.min(playerX, levelWidth - screenWidth));
+
     // Mover el fondo en relación con la posición del jugador
-    cameraX += (playerX - cameraX - screenWidth / 2) * 0.1;
-
-    // Ajustar la posición del fondo (o del contenedor principal)
+    cameraX = Math.min(playerX, levelWidth - screenWidth);
     document.body.style.backgroundPosition = `-${cameraX}px 0`;
-
-    // Puedes ajustar el factor (0.1 en este caso) para controlar la velocidad de seguimiento
   }
 
   document.addEventListener("keydown", (event) => {
