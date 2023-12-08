@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById("player");
-  const playerCenterAlternativa = document.querySelector(".centerAlternativa");
   let playerX = 0;
   let playerY = 0;
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
-  const screenWidth = 1600;
-  const screenHeight = 900;
+  let screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
   const levelWidth = 4000; // Ancho total del nivel del juego
   let cameraX = 0;
 
@@ -21,8 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mover el fondo en relación con la posición del jugador
     cameraX = Math.min(playerX, levelWidth - screenWidth);
-    document.body.style.backgroundPosition = `-${cameraX}px 0`;
+    document.body.style.backgroundPositionX = `-${cameraX}px`;
   }
+
+  window.addEventListener("resize", () => {
+    screenWidth = window.innerWidth;
+    updatePlayerPosition();
+  });
 
   document.addEventListener("keydown", (event) => {
     switch (event.key) {
