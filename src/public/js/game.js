@@ -4,19 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   let playerY = 0;
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
-  let lastKeyPressed = null;
+  let lastPressedKey = ""; // Variable para rastrear la última tecla presionada
 
   document.addEventListener("keydown", (event) => {
+    if (event.repeat) return; // Evitar repetición de teclas manteniendo presionada
+
     switch (event.key) {
       case "ArrowLeft":
         playerX -= 10;
         jumpDirection = -1;
-        lastKeyPressed = "ArrowLeft";
+        lastPressedKey = "ArrowLeft";
         break;
       case "ArrowRight":
         playerX += 10;
         jumpDirection = 1;
-        lastKeyPressed = "ArrowRight";
+        lastPressedKey = "ArrowRight";
         break;
       case " ":
         if (!isJumping) {
@@ -26,12 +28,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     updatePlayerPosition();
-    changePlayerGif();
   });
 
   document.addEventListener("keyup", () => {
-    // Resetear lastKeyPressed al soltar la tecla
-    lastKeyPressed = null;
+    // Cambiar el gif solo si no se ha presionado ninguna tecla después de soltar la última tecla
+    setTimeout(() => {
+      if (lastPressedKey === "ArrowLeft") {
+        changePlayerGif("centerAlternativa");
+      } else if (lastPressedKey === "ArrowRight") {
+        changePlayerGif("center");
+      }
+    }, 100);
+
+    lastPressedKey = ""; // Restablecer la última tecla presionada
   });
 
   function updatePlayerPosition() {
@@ -75,29 +84,34 @@ document.addEventListener("DOMContentLoaded", () => {
     jumpStep();
   }
 
-  function changePlayerGif() {
+  function changePlayerGif(direction) {
     let gifPath;
 
-    switch (lastKeyPressed) {
-      case "ArrowLeft":
+    switch (direction) {
+      case "left":
         gifPath =
           "url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaLeft.gif')";
         break;
-      case "ArrowRight":
+      case "right":
         gifPath =
           "url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaRight.gif')";
         break;
-      default:
-        // Si no se presiona ninguna tecla de flecha, muestra el gif central
+      case "center":
         gifPath =
           "url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaCenter.gif')";
+        break;
+      case "centerAlternativa":
+        gifPath =
+          "url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaCenterAlternativa.gif')";
+        break;
+      default:
         break;
     }
 
     player.style.backgroundImage = gifPath;
 
     // Agregar o quitar la clase 'left' según la dirección
-    if (lastKeyPressed === "ArrowLeft") {
+    if (direction === "left") {
       player.classList.add("left");
     } else {
       player.classList.remove("left");
