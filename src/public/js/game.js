@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const screenHeight = 900;
 
   function updatePlayerPosition() {
-    // Ajustar la posición del jugador
-    player.style.left = playerX + "px";
-    player.style.top = playerY + "px";
+    // Ajustar la posición del jugador en relación con la posición de la cámara
+    player.style.left = playerX - cameraX + "px";
+    player.style.top = playerY - cameraY + "px";
 
     // Calcular la posición de la cámara para seguir al jugador
     const cameraX = Math.max(0, playerX - screenWidth / 2);
@@ -52,11 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
       changePlayerGif("center");
     }
   });
-
-  function updatePlayerPosition() {
-    player.style.left = playerX + "px";
-    player.style.top = playerY + "px";
-  }
 
   function jump() {
     isJumping = true;
