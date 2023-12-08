@@ -41,6 +41,10 @@ margin-top: 280px;
   /* Estilo para el segundo GIF (izquierda) */
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaLeft.gif');
 }
+#player.center {
+  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaCenter.gif');
+  /* Otros estilos específicos para el estado "center" si es necesario */
+}
 
 #fondoPasto {
   width: 1800px;
