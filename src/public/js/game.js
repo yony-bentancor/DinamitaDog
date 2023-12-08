@@ -1,4 +1,32 @@
-document.addEventListener("DOMContentLoaded", () => {
+const { Scene, Game } = require("phaser");
+
+class MainScene extends Scene {
+  constructor() {
+    super({ key: "MainScene" });
+  }
+
+  preload() {
+    this.load.image(
+      "player",
+      "https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaRight.gif"
+    );
+  }
+
+  create() {
+    this.add.image(200, 126, "player");
+  }
+}
+
+const config = {
+  type: Phaser.AUTO,
+  width: 1200,
+  height: 600,
+  scene: MainScene,
+};
+
+const game = new Game(config);
+
+/* document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById("player");
   let playerX = 0;
   let playerY = 0;
@@ -129,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
       player.classList.remove("left");
     }
   }
-});
+}); */
 
 /* document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById("player");
