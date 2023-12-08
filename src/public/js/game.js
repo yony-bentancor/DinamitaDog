@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const screenWidth = 600;
   const screenHeight = 900;
+  let cameraX = 0;
+  let cameraY = 0;
 
   function updatePlayerPosition() {
     // Ajustar la posición del jugador en relación con la posición de la cámara
@@ -15,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     player.style.top = playerY - cameraY + "px";
 
     // Calcular la posición de la cámara para seguir al jugador
-    const cameraX = Math.max(0, playerX - screenWidth / 2);
-    const cameraY = Math.max(0, playerY - screenHeight / 2);
+    cameraX = Math.max(0, playerX - screenWidth / 2);
+    cameraY = Math.max(0, playerY - screenHeight / 2);
 
     // Ajustar la posición de la cámara (o del contenedor principal)
     document.body.style.backgroundPosition = `-${cameraX}px -${cameraY}px`;
@@ -59,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let jumpSpeed = 5;
     let gravity = 7.5;
     let initialY = playerY;
-    let jumpDistance = 50; // Distancia horizontal del salto
 
     function jumpStep() {
       if (jumpHeight > 0) {
