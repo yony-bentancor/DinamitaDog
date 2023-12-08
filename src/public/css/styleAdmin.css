@@ -44,12 +44,12 @@ margin-top: 280px;
 
 #fondoPasto {
   width: 1800px;
-  height: 320px;
+  height: 316px;
  /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   background-color: #000;
   position: absolute;
-margin-left: 0px;
+margin-left: 200px;
 margin-top: 0px;
   bottom: 0;
 
