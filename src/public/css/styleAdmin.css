@@ -45,13 +45,13 @@ margin-top: 280px;
 
 #fondoPasto {
   width: 1800px;
-  height: 800px;
+  height: 30px;
   background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/fondoPasto.jpg'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   background-color: #000;
   position: absolute;
 margin-left: 0px;
-margin-top: 0px;
+margin-top: 500px;
   bottom: 0;
 
   transform: translateX(-50%);
