@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mover el fondo en relación con la posición del jugador
     cameraX = Math.min(playerX, levelWidth - screenWidth);
-    document.body.style.backgroundPositionX = `-${cameraX}px`;
+    document.body.style.backgroundPositionX = `-${playerX}px`;
   }
 
   window.addEventListener("resize", () => {
