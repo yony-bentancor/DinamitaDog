@@ -6,6 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
+  const screenWidth = 1200;
+  const screenHeight = 800;
+
+  function updatePlayerPosition() {
+    // Ajustar la posición del jugador
+    player.style.left = playerX + "px";
+    player.style.top = playerY + "px";
+
+    // Calcular la posición de la cámara para seguir al jugador
+    const cameraX = Math.max(0, playerX - screenWidth / 2);
+    const cameraY = Math.max(0, playerY - screenHeight / 2);
+
+    // Ajustar la posición de la cámara (o del contenedor principal)
+    document.body.style.backgroundPosition = `-${cameraX}px -${cameraY}px`;
+  }
+
   document.addEventListener("keydown", (event) => {
     switch (event.key) {
       case "ArrowLeft":
