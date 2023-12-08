@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
   let isJumping = false;
   let jumpDirection = 1; // 1 para derecha, -1 para izquierda
 
-  const screenWidth = 2600;
+  const screenWidth = 600;
   const screenHeight = 900;
   let cameraX = 0;
-  let cameraY = 0;
 
   function updatePlayerPosition() {
-    // Calcular la posición de la cámara para seguir al jugador
-    cameraX = Math.max(0, playerX - screenWidth / 2);
-    cameraY = Math.max(0, playerY - screenHeight / 2);
+    // Ajustar la posición del jugador
+    player.style.left = playerX + "px";
+    player.style.top = playerY + "px";
 
-    // Ajustar la posición del jugador en relación con la posición de la cámara
-    player.style.left = playerX - cameraX + "px";
-    player.style.top = playerY - cameraY + "px";
+    // Mover el fondo en relación con la posición del jugador
+    cameraX += (playerX - cameraX - screenWidth / 2) * 0.1;
 
-    // Ajustar la posición de la cámara (o del contenedor principal)
-    document.body.style.backgroundPosition = `-${cameraX}px -${cameraY}px`;
+    // Ajustar la posición del fondo (o del contenedor principal)
+    document.body.style.backgroundPosition = `-${cameraX}px 0`;
+
+    // Puedes ajustar el factor (0.1 en este caso) para controlar la velocidad de seguimiento
   }
 
   document.addEventListener("keydown", (event) => {
