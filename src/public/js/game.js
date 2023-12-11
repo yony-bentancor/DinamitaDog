@@ -6,14 +6,10 @@ class MainScene extends Scene {
   }
 
   preload() {
-    this.load.spritesheet(
-      "player",
-      "https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/player.gif",
-      {
-        frameWidth: 132,
-        frameHeight: 148,
-      }
-    );
+    this.load.spritesheet("player", "/static/img/player.gif", {
+      frameWidth: 132,
+      frameHeight: 148,
+    });
   }
 
   create() {
