@@ -19,7 +19,7 @@ body {
 #player {
   width: 200px;
   height: 150px;
-  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/imgGallinaRight.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
+  background-image: url('https://dinamitadog-01a0d2a58fb2.herokuapp.com/static/img/player.gif'); /* Reemplaza 'ruta/a/tu/gallina.gif' con la ruta correcta */
   background-size: cover;
   position: absolute;
   bottom: 0;
