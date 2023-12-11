@@ -1,6 +1,6 @@
-const { Scene, Game } = require("phaser");
+const Phaser = require("phaser");
 
-class MainScene extends Scene {
+class MainScene extends Phaser.Scene {
   constructor() {
     super({ key: "MainScene" });
   }
@@ -75,7 +75,7 @@ const config = {
   scene: MainScene,
 };
 
-const game = new Game(config);
+const game = new Phaser.Game(config);
 
 /* document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById("player");
