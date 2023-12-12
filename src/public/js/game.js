@@ -37,6 +37,11 @@ function create() {
   });
 
   this.cursors = this.input.keyboard.createCursorKeys();
+
+  // Habilitar colisión con los límites del mundo
+  this.player.setCollideWorldBounds(true);
+
+  // Configurar la tecla de espacio para el salto
   this.spacebar = this.input.keyboard.addKey(
     Phaser.Input.Keyboard.KeyCodes.SPACE
   );
@@ -61,7 +66,7 @@ function update() {
     Phaser.Input.Keyboard.JustDown(this.spacebar) &&
     this.player.body.onFloor()
   ) {
-    this.player.setVelocityY(-400); // Velocidad vertical negativa para simular un salto hacia arriba
+    this.player.setVelocityY(-400);
   }
 
   // Limitar la posición Y
