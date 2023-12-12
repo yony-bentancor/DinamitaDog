@@ -19,7 +19,7 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-  this.load.spritesheet("player", "/img/imgGallinaRight.gif", {
+  this.load.spritesheet("player", "/img/player.gif", {
     frameWidth: 200,
     frameHeight: 126,
   });
@@ -31,7 +31,7 @@ function create() {
 
   this.anims.create({
     key: "player_anim",
-    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 45 }),
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 41 }),
     frameRate: 10,
     repeat: -1,
   });
@@ -45,6 +45,9 @@ function create() {
   this.spacebar = this.input.keyboard.addKey(
     Phaser.Input.Keyboard.KeyCodes.SPACE
   );
+
+  // Configurar la tecla "J" para el salto
+  this.jumpKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.J);
 }
 
 function update() {
@@ -66,6 +69,16 @@ function update() {
     Phaser.Input.Keyboard.JustDown(this.spacebar) &&
     this.player.body.onFloor()
   ) {
+    console.log("Salto con barra espaciadora");
+    this.player.setVelocityY(-400);
+  }
+
+  // Salto al presionar la tecla "J"
+  if (
+    Phaser.Input.Keyboard.JustDown(this.jumpKey) &&
+    this.player.body.onFloor()
+  ) {
+    console.log("Salto con tecla J");
     this.player.setVelocityY(-400);
   }
 
