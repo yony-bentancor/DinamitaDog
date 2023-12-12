@@ -32,7 +32,7 @@ function create() {
   // Configurar animación del jugador
   this.anims.create({
     key: "player_anim", // Nombre de la animación
-    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 5 }), // Ajusta el rango de frames según tu gif
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 45 }), // Ajusta el rango de frames según tu gif
     frameRate: 10, // Ajusta la velocidad de la animación según sea necesario
     repeat: -1, // -1 para que la animación se repita continuamente
   });
