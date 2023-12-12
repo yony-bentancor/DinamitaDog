@@ -31,7 +31,7 @@ function create() {
 
   this.anims.create({
     key: "player_anim",
-    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 41 }),
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 0 }),
     frameRate: 10,
     repeat: -1,
   });
