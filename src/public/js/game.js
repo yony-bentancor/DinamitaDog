@@ -19,9 +19,9 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-  this.load.spritesheet("player", "/img/player.gif", {
+  this.load.spritesheet("player", "/img/imgGallinaRight.gif", {
     frameWidth: 200,
-    frameHeight: 150,
+    frameHeight: 126,
   }); // Ajusta las dimensiones según tu gif
 }
 
