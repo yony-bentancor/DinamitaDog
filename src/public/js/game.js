@@ -19,12 +19,24 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-  this.load.image("player", "/img/player.gif");
+  this.load.spritesheet("player", "/img/player.gif", {
+    frameWidth: 32,
+    frameHeight: 48,
+  }); // Ajusta las dimensiones según tu gif
 }
 
 function create() {
   console.log("El juego se ha cargado correctamente.");
   this.player = this.physics.add.sprite(100, 450, "player");
+
+  // Configurar animación del jugador
+  this.anims.create({
+    key: "player_anim", // Nombre de la animación
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 5 }), // Ajusta el rango de frames según tu gif
+    frameRate: 10, // Ajusta la velocidad de la animación según sea necesario
+    repeat: -1, // -1 para que la animación se repita continuamente
+  });
+
   this.cursors = this.input.keyboard.createCursorKeys();
 }
 
@@ -33,10 +45,13 @@ function update() {
 
   if (this.cursors.left.isDown) {
     this.player.setVelocityX(-160);
+    this.player.anims.play("player_anim", true);
   } else if (this.cursors.right.isDown) {
     this.player.setVelocityX(160);
+    this.player.anims.play("player_anim", true);
   } else {
     this.player.setVelocityX(0);
+    this.player.anims.stop("player_anim");
   }
 
   // Limitar la posición Y
