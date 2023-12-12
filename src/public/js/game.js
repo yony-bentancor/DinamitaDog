@@ -59,7 +59,7 @@ function update() {
   // Salto al presionar la barra espaciadora
   if (
     Phaser.Input.Keyboard.JustDown(this.spacebar) &&
-    this.player.body.touching.down
+    this.player.body.onFloor()
   ) {
     this.player.setVelocityY(-400); // Velocidad vertical negativa para simular un salto hacia arriba
   }
