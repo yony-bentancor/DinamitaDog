@@ -19,7 +19,7 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-  this.load.spritesheet("player", "/img/player.gif", {
+  this.load.spritesheet("player", "/img/player.jpg", {
     frameWidth: 200,
     frameHeight: 126,
   });
