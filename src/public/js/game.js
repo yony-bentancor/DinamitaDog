@@ -1,5 +1,57 @@
 const config = {
   type: Phaser.AUTO,
+  width: 800,
+  height: 600,
+  scene: {
+    preload: preload,
+    create: create,
+    update: update,
+  },
+};
+
+const game = new Phaser.Game(config);
+
+let player;
+
+function preload() {
+  // Cargar recursos como imágenes, sonidos, etc.
+  this.load.image("player", "/img/player.jpg");
+}
+
+function create() {
+  // Lógica de creación del juego
+  player = this.physics.add.sprite(200, 126, "player");
+
+  // Configurar la tecla "J" para el movimiento hacia arriba
+  this.jumpKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.J);
+}
+
+function update() {
+  // Lógica de actualización del juego
+
+  // Movimiento hacia arriba al presionar la tecla "J"
+  if (Phaser.Input.Keyboard.JustDown(this.jumpKey)) {
+    // Guardar la posición original del jugador
+    const originalX = player.x;
+    const originalY = player.y;
+
+    // Mover el jugador hacia arriba en el eje Y
+    this.tweens.add({
+      targets: player,
+      y: 100,
+      duration: 1000, // Duración en milisegundos
+      ease: "Power2",
+      yoyo: true, // Hacer el movimiento de ida y vuelta
+      onComplete: () => {
+        // Volver a la posición original después del movimiento
+        player.x = originalX;
+        player.y = originalY;
+      },
+    });
+  }
+}
+/* const config = {
+  type: Phaser.AUTO,
   width: 1200,
   height: 800,
   physics: {
@@ -87,7 +139,7 @@ function update() {
     this.player.y = maxY;
     this.player.setVelocityY(0);
   }
-}
+} */
 
 /* document.addEventListener("DOMContentLoaded", () => {
   const player = document.getElementById("player");
