@@ -23,17 +23,26 @@ function preload() {
 }
 
 function create() {
+  console.log("El juego se ha cargado correctamente.");
   this.player = this.physics.add.sprite(100, 450, "player");
   this.cursors = this.input.keyboard.createCursorKeys();
 }
 
 function update() {
+  const maxY = 550; // Cambia esto al valor que desees como límite superior en Y
+
   if (this.cursors.left.isDown) {
     this.player.setVelocityX(-160);
   } else if (this.cursors.right.isDown) {
     this.player.setVelocityX(160);
   } else {
     this.player.setVelocityX(0);
+  }
+
+  // Limitar la posición Y
+  if (this.player.y > maxY) {
+    this.player.y = maxY;
+    this.player.setVelocityY(0); // Detener la velocidad en Y si se alcanza el límite
   }
 }
 
