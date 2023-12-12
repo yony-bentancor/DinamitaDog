@@ -22,26 +22,28 @@ function preload() {
   this.load.spritesheet("player", "/img/imgGallinaRight.gif", {
     frameWidth: 200,
     frameHeight: 126,
-  }); // Ajusta las dimensiones según tu gif
+  });
 }
 
 function create() {
   console.log("El juego se ha cargado correctamente.");
   this.player = this.physics.add.sprite(100, 450, "player");
 
-  // Configurar animación del jugador
   this.anims.create({
-    key: "player_anim", // Nombre de la animación
-    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 45 }), // Ajusta el rango de frames según tu gif
-    frameRate: 10, // Ajusta la velocidad de la animación según sea necesario
-    repeat: -1, // -1 para que la animación se repita continuamente
+    key: "player_anim",
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 45 }),
+    frameRate: 10,
+    repeat: -1,
   });
 
   this.cursors = this.input.keyboard.createCursorKeys();
+  this.spacebar = this.input.keyboard.addKey(
+    Phaser.Input.Keyboard.KeyCodes.SPACE
+  );
 }
 
 function update() {
-  const maxY = 550; // Cambia esto al valor que desees como límite superior en Y
+  const maxY = 550;
 
   if (this.cursors.left.isDown) {
     this.player.setVelocityX(-160);
@@ -54,10 +56,18 @@ function update() {
     this.player.anims.stop("player_anim");
   }
 
+  // Salto al presionar la barra espaciadora
+  if (
+    Phaser.Input.Keyboard.JustDown(this.spacebar) &&
+    this.player.body.touching.down
+  ) {
+    this.player.setVelocityY(-400); // Velocidad vertical negativa para simular un salto hacia arriba
+  }
+
   // Limitar la posición Y
   if (this.player.y > maxY) {
     this.player.y = maxY;
-    this.player.setVelocityY(0); // Detener la velocidad en Y si se alcanza el límite
+    this.player.setVelocityY(0);
   }
 }
 
