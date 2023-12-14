@@ -19,34 +19,33 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-  this.load.spritesheet("player", "/img/player.gif", {
-    frameWidth: 200,
-    frameHeight: 126,
-  });
+  // Carga el GIF directamente como una imagen
+  this.load.image("player", "/img/player.gif");
 }
 
 function create() {
   console.log("El juego se ha cargado correctamente.");
   this.player = this.physics.add.sprite(100, 450, "player");
 
+  // Configura la animación de reproducción continua
   this.anims.create({
     key: "player_anim",
-    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 0 }),
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 40 }), // Ajusta el rango de frames según la duración de tu GIF
     frameRate: 10,
     repeat: -1,
   });
 
   this.cursors = this.input.keyboard.createCursorKeys();
 
-  // Habilitar colisión con los límites del mundo
+  // Habilita la colisión con los límites del mundo
   this.player.setCollideWorldBounds(true);
 
-  // Configurar la tecla de espacio para el salto
+  // Configura la tecla de espacio para el salto
   this.spacebar = this.input.keyboard.addKey(
     Phaser.Input.Keyboard.KeyCodes.SPACE
   );
 
-  // Configurar la tecla "J" para el salto
+  // Configura la tecla "J" para el salto
   this.jumpKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.J);
 }
 
@@ -82,7 +81,7 @@ function update() {
     this.player.setVelocityY(-400);
   }
 
-  // Limitar la posición Y
+  // Limita la posición Y
   if (this.player.y > maxY) {
     this.player.y = maxY;
     this.player.setVelocityY(0);
