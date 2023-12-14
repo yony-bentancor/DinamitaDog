@@ -19,6 +19,7 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
+  // Cargar el GIF como un spritesheet
   this.load.spritesheet("player", "/img/player.gif", {
     frameWidth: 200,
     frameHeight: 126,
@@ -29,65 +30,36 @@ function create() {
   console.log("El juego se ha cargado correctamente.");
   this.player = this.physics.add.sprite(100, 450, "player");
 
-  // Configura la animación de reproducción continua
+  // Configurar la animación para que se reproduzca automáticamente
   this.anims.create({
     key: "player_anim",
-    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 40 }), // Ajusta el rango de frames según la duración de tu GIF
+    frames: this.anims.generateFrameNumbers("player", { start: 0, end: 40 }), // Ajusta el rango según la duración de tu GIF
     frameRate: 10,
     repeat: -1,
   });
 
+  // Configurar las teclas de dirección
   this.cursors = this.input.keyboard.createCursorKeys();
-
-  // Habilita la colisión con los límites del mundo
-  this.player.setCollideWorldBounds(true);
-
-  // Configura la tecla de espacio para el salto
-  this.spacebar = this.input.keyboard.addKey(
-    Phaser.Input.Keyboard.KeyCodes.SPACE
-  );
-
-  // Configura la tecla "J" para el salto
-  this.jumpKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.J);
 }
 
 function update() {
   const maxY = 550;
+  const speed = 160;
 
   if (this.cursors.left.isDown) {
-    this.player.setVelocityX(-160);
+    this.player.setVelocityX(-speed);
     this.player.anims.play("player_anim", true);
   } else if (this.cursors.right.isDown) {
-    this.player.setVelocityX(160);
+    this.player.setVelocityX(speed);
     this.player.anims.play("player_anim", true);
   } else {
     this.player.setVelocityX(0);
     this.player.anims.stop("player_anim");
   }
 
-  // Salto al presionar la barra espaciadora
-  if (
-    Phaser.Input.Keyboard.JustDown(this.spacebar) &&
-    this.player.body.onFloor()
-  ) {
-    console.log("Salto con barra espaciadora");
-    this.player.setVelocityY(-400);
-  }
-
-  // Salto al presionar la tecla "J"
-  if (
-    Phaser.Input.Keyboard.JustDown(this.jumpKey) &&
-    this.player.body.onFloor()
-  ) {
-    console.log("Salto con tecla J");
-    this.player.setVelocityY(-400);
-  }
-
-  // Limita la posición Y
-  if (this.player.y > maxY) {
-    this.player.y = maxY;
-    this.player.setVelocityY(0);
-  }
+  // Resto del código específico de tu juego
+  // Aquí puedes agregar más lógica de juego según tus necesidades
+  // Por ejemplo, colisiones, eventos, etc.
 }
 
 /* document.addEventListener("DOMContentLoaded", () => {
