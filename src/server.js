@@ -19,8 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", pageRoutes);
 
 app.set("view engine", "njk");
-app.use(express.static(__dirname + "/public"));
-
+app.use("/static", express.static(__dirname + "/public"));
 /*app.use("/public", express.static("${__dirname}/public"));*/
 
 app.listen(PORT, () =>
