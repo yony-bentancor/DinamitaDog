@@ -17,7 +17,7 @@ db();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", pageRoutes);
-
+app.use(express.static("/"));
 app.set("view engine", "njk");
 app.use("/static", express.static(__dirname + "/public"));
 /*app.use("/public", express.static("${__dirname}/public"));*/

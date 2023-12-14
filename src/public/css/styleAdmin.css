@@ -5,15 +5,17 @@
 body {
   margin: 0;
   padding: 0;
+  
+  background-color: #FEC426;
   overflow: hidden;
 }
 
 #game-container {
-  width: 100vw;
+  width: 3000px;
   height: 100vh;
-  position: relative;
   background-color: #FEC426; 
-
+  background-size: cover;
+  display: flex;
 }
 
 #player {
